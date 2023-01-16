@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">	<title>WebCat</title>
+
+	<script src="js/wc-3.0.6.min.js"></script>
+
+  </head>
+
+  <style>
+
+  h3{
+
+    height:200px;
+
+    width:200px;
+
+    background-color:red;
+
+    text-align:center;
+
+    line-height:200px;
+
+    border-radius:50%;
+
+    margin-left:80px;
+
+    margin-top:200px;
+
+    } 
+
+  </style>
+
+  <body>	
+
+  <h3 onclick="i++">点击</h3>
+
+  <script>
+
+let i=0  
+
+   
+
+function a(){   
+
+   setTimeout(()=>{
+
+       wc.alertDialog("游戏结束,你一共点了"+i+"下");
+
+      },3000);
+
+   i=0
+
+    }
+
+	</script>
+
+  </body>
+
+</script>
+
+<center>
+
+<button onclick="a()">开始游戏</button>
+
+</center>
+
+<style>
+
+button{
+
+ height:40px;
+
+ width:200px;
+
+color:white;
+
+ background-color:black
+
+  }
+
+</style>
